@@ -115,6 +115,12 @@ main {
 }
 
 // Work/Projects
+#work-flexend-h2{
+  display: inline;
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -139,7 +145,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 10rem;
 
   div {
     font-size: 2rem;
