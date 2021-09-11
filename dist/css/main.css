@@ -373,23 +373,39 @@ main#home h1 {
     margin-top: 10vh;
   }
   main .lg-heading {
-    margin-top: 0.5rem;
+    margin: 1rem 0.5rem;
     font-size: 5rem;
+  }
+  main .sm-heading{
+    font-size: 0.9rem;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
   }
   .projects {
     grid-template-columns: 1fr;
   }
+  
+  .typing {
+    width: 27ch;
+    animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
+    white-space:nowrap;
+    overflow:visible;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+  }
 }
 
-/* .wrapper {
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+  
+}
 .typing {
   width: 27ch;
   animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
+  white-space:nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
