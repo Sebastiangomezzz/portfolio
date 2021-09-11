@@ -373,7 +373,7 @@ main#home h1 {
     margin-top: 10vh;
   }
   main .lg-heading {
-    margin: 1rem 0.5rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
     font-size: 5rem;
   }
   main .sm-heading{
@@ -394,8 +394,15 @@ main#home h1 {
     font-family: monospace;
     font-size: 1em;
   }
+  .about-paragraph{
+    font-size:1rem;
+  }
+  .bio-image{
+    width: 155px;
+    height: 185px;
+  }
 }
-
+/* typewriting effect */
 .wrapper {
   display: flex;
   align-items: center;
