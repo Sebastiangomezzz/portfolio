@@ -309,11 +309,28 @@ main#home h1 {
   color: #fff;
   height: 60px;
 }
+.job{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem;
+  border-radius: 8px;
+  
+}
+.portraitlarge{
+  height: 250px;
+  border-radius: 50%;
 
+}
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  .img-about{
+    height: 150px;
+  }
+  
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -376,7 +393,7 @@ main#home h1 {
     margin: 1rem 0.5rem 1rem 0.5rem;
     font-size: 5rem;
   }
-  main .sm-heading{
+  main .sm-heading {
     font-size: 1.3rem;
     margin: 2.5rem 0 3rem 0;
     padding: 0;
@@ -384,22 +401,25 @@ main#home h1 {
   .projects {
     grid-template-columns: 1fr;
   }
-  
+
   .typing {
     width: 27ch;
-    animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
-    white-space:nowrap;
-    overflow:visible;
+    animation: typing 2.5s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: visible;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 1em;
   }
-  .about-paragraph{
-    font-size:1rem;
+  .about-paragraph {
+    font-size: 1rem;
   }
-  .bio-image{
+  .bio-image {
     width: 155px;
     height: 185px;
+  }
+  .img-about{
+    height: 100px;
   }
 }
 /* typewriting effect */
@@ -407,12 +427,11 @@ main#home h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .typing {
   width: 27ch;
-  animation: typing 2.5s steps(22), blink .5s step-end infinite alternate;
-  white-space:nowrap;
+  animation: typing 2.5s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
@@ -421,12 +440,12 @@ main#home h1 {
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
